@@ -1,5 +1,9 @@
 import os
-import flask import (Flask,render_template,jsonify,request,redirect)
+from flask import Flask,
+    render_template,
+    jsonify,
+    request,
+    redirect
 
 app=Flask(__name__)
 from flask_sqlalchemy import SQLAlchemy

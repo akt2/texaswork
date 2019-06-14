@@ -1,10 +1,10 @@
 import os
-from flask import 
+from flask import (
     Flask,
     render_template,
     jsonify,
     request,
-    redirect
+    redirect)
 
 app=Flask(__name__)
 from flask_sqlalchemy import SQLAlchemy

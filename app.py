@@ -11,7 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 @app.route('/')
 def home():
-    return 'meow'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

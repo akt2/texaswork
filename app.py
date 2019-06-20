@@ -4,6 +4,7 @@ import pymysql
 import sqlalchemy
 import flask_sqlalchemy
 import pandas
+import MySQLdb
 
 # Thank you, Cam! source for the following code up to app=Flask(_name_): https://github.com/CamKirk/nanda/blob/master/app.py
 

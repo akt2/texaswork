@@ -9,7 +9,7 @@ import pandas
 
 if not os.environ.get('DYNO'):
     import config
-    print(config.name)
+    # print(config.name)
 
 if os.environ.get('CLEARDB_DATABASE_URL'):
     dburl = os.environ['CLEARDB_DATABASE_URL']
@@ -31,4 +31,4 @@ def data():
     return jsonify(df.to_json(orient='records'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)f

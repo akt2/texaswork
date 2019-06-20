@@ -1,10 +1,13 @@
 /* IMAGE STYLES */
 .rounded-circle {
     border-radius: 50%!important;
+    vertical-align: middle;
+    align-content: center;
 }
 img {
     vertical-align: middle;
     border-style: none;
+    align-content: center;
 }
 
 /*  TEXT STYLES */

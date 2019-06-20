@@ -9,7 +9,7 @@
 
   <!-- Leaflet JS & CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin="" />
@@ -29,9 +29,9 @@
     <div class="row">
       <div class="col-md-12 featurette-heading">
         <h1>Texas Labor Data</h1>
-        <p class='lead'>We will use Web Scraping to pull data from BLS on employment by sector
-          in each of Texas’ 25 metropolitan areas as identified by the BLS. The data will
-          be stored on either an SQL or MySQL database, and analyzed using Python, including the Pandas library.</p>
+        <p class='lead'>This dashboard features visualizations of the last three years of data describing employment by sector
+          in each of Texas’ 25 metropolitan areas as identified by the federal Bureau of Labor Statistics. The data were extracted, 
+          transformed, and loaded using various Python libraries into a MySQL database hosted on a Heroku server.</p>
         <br>
         <br>
         <h2>Major Cities Job Markets</h2>
@@ -45,7 +45,7 @@
       <!-- Section for Major cities description -->
       <div class="row">
         <div class="col-lg-3">
-          <img class="rounded-circle" src="Houston-Skyline.jpg" alt="Generic placeholder image" width="140"
+          <img class="rounded-circle" src="../images/Houston-Skyline.jpg" alt="Generic placeholder image" width="140"
             height="140">
           <h2>Houston</h2>
           <p>Job growth for Houston has increased by 2.8%; adding more than
@@ -60,7 +60,7 @@
 
 
         <div class="col-lg-3">
-          <img class="rounded-circle" src="San Antonio -Skyline.jpg" alt="Generic placeholder image" width="140"
+          <img class="rounded-circle" src="../images/San Antonio-Skyline.jpg" alt="Generic placeholder image" width="140"
             height="140">
           <h2>San Antonio</h2>
           <p>Job growth for San Antonio has dropped to 1.4% from last year, in comparison to 2.0% from
@@ -73,7 +73,7 @@
 
 
         <div class="col-lg-3">
-          <img class="rounded-circle" src="Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="../images/Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Austin</h2>
           <p>Job growth for Austin has increased by 2.1%; adding more than
             22,700 jobs to from last year. Based on last years' job growth, Austin
@@ -84,7 +84,7 @@
 
 
         <div class="col-lg-3">
-          <img class="rounded-circle" src="Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="../images/Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Dallas</h2>
           <p>Job growth for Dallas has increased by 3.3%; adding more than
             84,900 jobs to from last year. Professional and business service
@@ -108,16 +108,16 @@
         </div>
         <!-- leaflet map -->
         <div class="col-md-7" id="map"></div>
-        <script type="text/javascript" src="config.js"></script>
-        <script type="text/javascript" src="logic.js"></script>
+        <script type="text/javascript" src="../static/js/config.js"></script>
+        <script type="text/javascript" src="../static/js/logic.js"></script>
       </div>
-
+      <br>
        <!-- Section for Leaflet maps and d3 maps -->
        <div class="row featurette">
           <!-- leaflet map -->
         <div class="col-md-7" id="map2"></div>
-        <script type="text/javascript" src="config_Proj2.js"></script>
-        <script type="text/javascript" src="logic_Proj2.js"></script>
+        <script type="text/javascript" src="../static/js/config_Proj2.js"></script>
+        <script type="text/javascript" src="../static/js/logic_Proj2.js"></script>
         <!-- map explanation -->
         <div class="col-md-5">
           <h2 class="featurette-heading">Labor Statistics Map </h2>
@@ -135,5 +135,5 @@
     <!-- <script src="choropleth.js"></script> -->
 
 </body>
-
+<footer>Dashboard by Avery, Diamond, Mike, and Ruth</footer>
 </html>

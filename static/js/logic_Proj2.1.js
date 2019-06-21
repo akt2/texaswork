@@ -27,7 +27,7 @@ function layerClickHandler(e) {
 
     function makeplot() {
         Plotly.d3.csv("/csv", function (data) {
-            console.log(data)
+            // console.log(data)
             data.sort(function (x, y) { return d3.ascending(x.TOT_EMP, y.TOT_EMP); });
             processData(data)
         });

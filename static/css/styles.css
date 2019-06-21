@@ -14,10 +14,17 @@ img {
 .lead {
     font-size: 2.15rem;
     font-weight: 300;
-    text-align: center;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-
+#emp_chart {
+  text-align: center;
+}
+#lab_map {
+  text-align: center;
+}
 body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,

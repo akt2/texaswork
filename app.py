@@ -7,18 +7,18 @@ import pandas
 
 # Thank you, Cam! source for the following code up to app=Flask(_name_): https://github.com/CamKirk/nanda/blob/master/app.py
 
-# if not os.environ.get('DYNO'):
-#     import config
-#     # print(config.name)
+if not os.environ.get('DYNO'):
+    import config
+    # print(config.name)
 
-# if os.environ.get('CLEARDB_DATABASE_URL'):
-#     dburl = os.environ['CLEARDB_DATABASE_URL']
-# else:
-#     dburl = config.dburl
+if os.environ.get('CLEARDB_DATABASE_URL'):
+    dburl = os.environ['CLEARDB_DATABASE_URL']
+else:
+    dburl = config.dburl
 
-# engine = sqlalchemy.create_engine(dburl)
-# df = pandas.read_sql('SELECT * FROM may', engine)
-# print(df)
+engine = sqlalchemy.create_engine(dburl)
+df = pandas.read_sql('SELECT * FROM may', engine)
+print(df)
 
 app=Flask(__name__)
 

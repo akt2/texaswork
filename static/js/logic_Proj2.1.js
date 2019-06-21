@@ -1,3 +1,5 @@
+
+
 // Create a map object
 var template = '<form id="popup-form">\
   <table class="popup-table">\
@@ -24,7 +26,8 @@ function layerClickHandler(e) {
 
 
     function makeplot() {
-        Plotly.d3.csv("../../DataSet/bob.csv", function (data) {
+        Plotly.d3.csv("/csv", function (data) {
+            console.log(data)
             data.sort(function (x, y) { return d3.ascending(x.TOT_EMP, y.TOT_EMP); });
             processData(data)
         });
@@ -82,7 +85,7 @@ function layerClickHandler(e) {
                 }
             },
             yaxis: {
-                title: 'Total Employed',
+                titlec: 'Total Employed',
                 titlefont: {
                     size: 16,
                     color: 'rgba(107, 107, 107)'

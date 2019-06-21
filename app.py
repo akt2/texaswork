@@ -1,5 +1,5 @@
 import os 
-from flask import Flask,render_template,jsonify,request,redirect
+from flask import Flask,render_template,jsonify,request,redirect,send_file
 import pymysql
 import sqlalchemy
 import flask_sqlalchemy
@@ -21,8 +21,8 @@ else:
 engine = sqlalchemy.create_engine(dburl)
 bob=engine.execute('SELECT * FROM may LIMIT 5')
 
-for x in bob:
-    print(x)
+# for x in bob:
+#     print(x)
 
 df = pandas.read_sql('SELECT * FROM may', engine)
 print(df)
@@ -36,6 +36,10 @@ def home():
 @app.route('/data')
 def data():
     return jsonify(df.to_json(orient='records'))
+
+@app.route('/csv')
+def upload_file():
+   return send_file('DataSet/bob.csv')
 
 if __name__ == '__main__':
     app.run(debug=True)

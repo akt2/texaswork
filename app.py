@@ -37,7 +37,7 @@ def home():
 def data():
     return jsonify(df.to_json(orient='records'))
 
-@app.route('/csv')
+@app.route('/bob.csv')
 def upload_file():
    return send_file('DataSet/bob.csv')
 

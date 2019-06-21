@@ -41,7 +41,8 @@
           Austin’s by financial services and manufacturing;
           and Dallas-Fort Worth’s by mining, leisure and hospitality, and professional business services</p>
       </div>
-
+        <br>
+        <br>
       <!-- Section for Major cities description -->
       <div class="row">
         <div class="col-lg-3">
@@ -116,8 +117,8 @@
        <div class="row featurette">
           <!-- leaflet map -->
         <div class="col-md-7" id="map2"></div>
-        <script type="text/javascript" src="../static/js/config_Proj2.js"></script>
-        <script type="text/javascript" src="../static/js/logic_Proj2.js"></script>
+        <script type="text/javascript" src="../static/js/config.js"></script>
+        <script type="text/javascript" src="../static/js/logic_Proj2.1.js"></script>
         <!-- map explanation -->
         <div class="col-md-5">
           <h2 class="featurette-heading">Labor Statistics Map </h2>
@@ -125,15 +126,32 @@
             occupations within the 31 regions within in Texas. 
           </p>
         </div>
-       
-    </div>
-
-
-    <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- <script src="choropleth.js"></script> -->
-
+        <br>
+        <br>
+         <!-- Section for Chart.js -->
+       <div class="row featurette">
+           <div class="col-md-7">
+             <!-- map explanation -->
+             <h2 class="featurette-heading"> Statewide Unemployment Chart </h2>
+             <p class="lead">This map represents the changes in the employment for 2018.
+             </p>
+           </div>
+           <!-- CDN for Chart.js -->
+           <!-- <script scr= "https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> -->
+           <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
+           <!-- Chart.js -->
+           <canvas class="col-md-5" id="mixedChart"></canvas>
+           <script type="text/javascript" src="../static/js/Chart.js"></script>
+         </div>
+     </div>
+ 
+ 
+     <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </body>
+<br>
+<br>
 <footer>Dashboard by Avery, Diamond, Mike, and Ruth</footer>
+<br>
 </html>

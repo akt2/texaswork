@@ -16,7 +16,14 @@ if os.environ.get('CLEARDB_DATABASE_URL'):
 else:
     dburl = config.dburl
 
+
+
 engine = sqlalchemy.create_engine(dburl)
+bob=engine.execute('SELECT * FROM may LIMIT 5')
+
+for x in bob:
+    print(x)
+
 df = pandas.read_sql('SELECT * FROM may', engine)
 print(df)
 

@@ -24,7 +24,7 @@ function layerClickHandler(e) {
 
 
     function makeplot() {
-        Plotly.d3.csv("bob.csv", function (data) {
+        Plotly.d3.csv("../../DataSet/bob.csv", function (data) {
             data.sort(function (x, y) { return d3.ascending(x.TOT_EMP, y.TOT_EMP); });
             processData(data)
         });
@@ -116,7 +116,7 @@ var myMap = L.map('map2', {
             attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
             maxZoom: 18,
             id: "mapbox.streets",
-            accessToken: API_KEY
+            accessToken: API_KEY2
         }),
         L.geoJson({
             "type": "FeatureCollection",

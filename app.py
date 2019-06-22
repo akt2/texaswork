@@ -43,7 +43,7 @@ def upload_file():
 
 @app.route('/stat')
 def stat():
-    return render_template('index_Proj2.html')
+    return render_template('stat.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

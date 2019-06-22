@@ -1,5 +1,5 @@
 import os 
-from flask import Flask,render_template,jsonify,request,redirect,send_file
+# from flask import Flask,render_template,jsonify,request,redirect,send_file
 import pymysql
 import sqlalchemy
 import flask_sqlalchemy
@@ -27,19 +27,17 @@ bob=engine.execute('SELECT * FROM may LIMIT 5')
 df = pandas.read_sql('SELECT * FROM may', engine)
 print(df)
 
-app=Flask(__name__)
+# app=Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
-@app.route('/data')
-def data():
-    return jsonify(df.to_json(orient='records'))
+ell=df.to_json(orient='records')
 
-@app.route('/csv')
-def upload_file():
-   return send_file('DataSet/bob.csv')
+# @app.route('/bob.csv')
+# def upload_file():
+#    return send_file('DataSet/bob.csv')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)

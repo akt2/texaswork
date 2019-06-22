@@ -41,5 +41,9 @@ def data():
 def upload_file():
    return send_file('DataSet/bob.csv')
 
+@app.route('/stat')
+def stat():
+    return render_template('index_Proj2.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

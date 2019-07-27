@@ -31,6 +31,10 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
+    return render_template('index2.html')
+
+@app.route('/two')
+def two():
     return render_template('index.html')
 
 @app.route('/data')

@@ -31,15 +31,16 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index2.html')
+    return render_template('index23.html')
 
-@app.route('/two')
+@app.route('/tableau')
 def two():
-    return render_template('index.html')
+    return render_template('tableau.html')
 
 @app.route('/data')
 def data():
-    return jsonify(df.to_json(orient='records'))
+    return render_template('index2.html')
+    # jsonify(df.to_json(orient='records'))
 
 @app.route('/csv')
 def upload_file():

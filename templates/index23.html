@@ -66,6 +66,7 @@
           transformed, and loaded using various Python libraries into a MySQL database hosted on a Heroku server.</p>
         <br>
         <br>
+        <br>
         <h2>Major Cities Job Markets</h2>
         <p class='lead'>Different job categories have led in different regions of our diverse state:
           Houston’s job growth driven most by mining and manufacturing;
@@ -130,18 +131,18 @@
 <br>
       <!-- Section for Leaflet maps and d3 maps -->
       <div class="row featurette">
-        <div class="col-lg-12">
-          <!-- map explanation -->
+        <!-- <div class="col-lg-12">
+         
           <h2 class="featurette-heading">Tableau</h2>
           <p class="lead">The color based map represents the 25 metropolitan
             regions within the state of Texas. In addition, there are 6 rural
             regions represented in the color map. All 31 regions are represented within the 3 year
             labor statistics retrieved from US Bureau of Labor Statistics for the state
             of Texas.</p>
-        </div>
+        </div> -->
         <!-- leaflet map -->
-        <div class="col-lg-12" id="tableaucontainer">
-          <div class='container'>                       
+        <!-- <div class="col-lg-12" id="tableaucontainer">
+          <div class='container'>                        -->
             <!-- <div class='tableauPlaceholder' id='viz1564249110186'>
               <noscript>
                 <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3Rev2&#47;Top10MedianHourlyWagebyRegion&#47;1_rss.png' style='border: none' /></a>
@@ -164,15 +165,13 @@
                 <param name='filter' value='publish=yes'/>
               </object>
             </div> -->
-            <a class="nav-link" href="tableau.html">Tableau <span class="sr-only">(current)</span></a>
-                
+               
           </div>
         </div>
       </div>
         <br>
-        <br>
          <!-- Section for Chart.js -->
-       <div class="row featurette">
+       <div class="row featurette" id='empbar'>
            <div class="col-lg-12">
              <!-- map explanation -->
              <h2 class="featurette-heading"> Statewide Employment Chart </h2>
@@ -183,7 +182,7 @@
            <!-- <script scr= "https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> -->
            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
            <!-- Chart.js -->
-           <canvas class="col-lg-10" id="mixedChart"></canvas>
+           <canvas class="col-lg-12" id="mixedChart"></canvas>
            <script type="text/javascript" src="../static/js/Chart.js"></script>
          </div>
      </div>

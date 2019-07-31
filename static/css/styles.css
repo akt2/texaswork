@@ -102,10 +102,34 @@ a.nav-link  {
   margin-left: 5px;
   margin-right: 5px;
 }
-li.nav-item.active {
-
+#circles.row {
+  margin-left: 5%;
+  margin-right: 5%;
+  align-content: center;
 }
-#circles {
-  margin-left: 10px;
-  margin-right: 10px;
+p.lead {
+  font-size: 200%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+img.rounded-circle {
+  /* align-content: center; */
+  margin: 10%;
+  margin-left: 18%;
+}
+p {
+  font-size: 150%;
+}
+.row {
+  align-content: center;
+}
+h2.featurette-heading {
+  font-size: 220%;
+  font-weight: bold;
+  margin: 2%;
+}
+
+#mixedChart {
+  align-content: center;
+  float: center;
 }

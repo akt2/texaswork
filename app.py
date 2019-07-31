@@ -34,7 +34,7 @@ def home():
     return render_template('index23.html')
 
 @app.route('/tableau')
-def two():
+def tableau():
     return render_template('tableau.html')
 
 @app.route('/data')

@@ -123,6 +123,9 @@ img.rounded-circle {
 p {
   font-size: 150%;
 }
+a {
+  color: inherit;
+}
 .row {
   align-content: center;
 }

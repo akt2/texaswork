@@ -31,7 +31,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index23.html')
+    return render_template('home.html')
 
 @app.route('/tableau')
 def tableau():
@@ -41,9 +41,9 @@ def tableau():
 def models():
     return render_template('models.html')
 
-@app.route('/data')
-def data():
-    return render_template('data.html')
+# @app.route('/data')
+# def data():
+#     return render_template('data.html')
     # jsonify(df.to_json(orient='records'))
 
 # @app.route('/csv')

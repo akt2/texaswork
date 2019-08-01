@@ -20,7 +20,7 @@ body {
     margin: 0;
     font-family: "Times New Roman",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
     "Times New Roman","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    background-image: image('../static/images/texascity1.jpg');
+    background-image: src='../static/images/texascity1.jpg';
     height: auto;
     position: relative;
     min-height: 100% !important;

@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title class="featurette-heading">Texas Labor Data</title>
-
-  <!-- Leaflet JS & CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin="" />
@@ -18,7 +15,6 @@
     integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
     crossorigin=""></script>
 
-  <!-- d3 JavaScript -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -29,38 +25,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" id = 'navy' >
-        <a class="navbar-brand" href="/">Texas Employment</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-end">
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="windspeed.html">Windspeed</a>
-                </div>
-              </li> -->
-              <li class="nav-item active">
-                  <a class="nav-link" href="/tableau"> Visualizations <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/data">Models</a>
-                  </li>
-              </ul>
-        </div>
-      </nav>    
-  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg" id = 'navy' >
+    <a class="navbar-brand" href="/">Texas Employment</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" href="/tableau"> Visualizations <span class="sr-only">(current)</span></a>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/data">Models</a>
+          </li>
+      </ul>
+    </div>
+  </nav>    
+  <div class="container">
     <div class="row">
-      <div class="col-md-12 featurette-heading">
-        <h1>Texas Labor Data</h1>
+      <div class="col-lg-12 featurette-heading">
+        <h1>Texas </h1>
         <p class='lead'>This dashboard features visualizations of the last three years of data describing employment by sector
           in each of Texas’ 25 metropolitan areas as identified by the federal Bureau of Labor Statistics. The data were extracted, 
           transformed, and loaded using various Python libraries into a MySQL database hosted on a Heroku server.</p>
@@ -89,9 +73,8 @@
             over the past year. However, the most significant growth has been within
             the manufacturing industry. Manufacturing job growth contributed 14,900
             jobs within the past year; making this the 21st consecutive month for annual
-            job growth.
-          </p>
-        </div><!-- /.col-lg-3 -->
+            job growth.</p>
+        </div>
 
 
         <div class="col-lg-3">
@@ -101,11 +84,8 @@
           <p>Job growth for San Antonio has dropped to 1.4% from last year, in comparison to 2.0% from
             the previous year. However, San Antonio is aiming on becoming the 6th largest city by 2021.
             There was an increase in construction industry by 5.1%; making it the greatest increase in
-            job growth.
-
-          </p>
-        </div><!-- /.col-lg-3 -->
-
+            job growth.</p>
+        </div>
 
         <div class="col-lg-3">
           <img class="rounded-circle" src="../static/images/Austin-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
@@ -115,8 +95,7 @@
             has became the 16th fastest growing major metropolitan city. Wholesale trade
             grew by 8.2% making it the fastest growing industry. However, professional
             and business services added the most 6,000 jobs sparking the greatest increase in job growth.</p>
-        </div><!-- /.col-lg-3 -->
-
+        </div>
 
         <div class="col-lg-3">
           <img class="rounded-circle" src="../static/images/Dallas-Skyline.jpg" alt="Generic placeholder image" width="140" height="140">
@@ -126,74 +105,14 @@
             related job grew by 3.8% over the past year. The industry with the
             greatest increase in job growth was lesiure and hospitality; which added
             18,800 jobs.</p>
-        </div><!-- /.col-lg-3 -->
-      </div>
-<br>
-      <!-- Section for Leaflet maps and d3 maps -->
-      <div class="row featurette">
-        <!-- <div class="col-lg-12">
-         
-          <h2 class="featurette-heading">Tableau</h2>
-          <p class="lead">The color based map represents the 25 metropolitan
-            regions within the state of Texas. In addition, there are 6 rural
-            regions represented in the color map. All 31 regions are represented within the 3 year
-            labor statistics retrieved from US Bureau of Labor Statistics for the state
-            of Texas.</p>
-        </div> -->
-        <!-- leaflet map -->
-        <!-- <div class="col-lg-12" id="tableaucontainer">
-          <div class='container'>                        -->
-            <!-- <div class='tableauPlaceholder' id='viz1564249110186'>
-              <noscript>
-                <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3Rev2&#47;Top10MedianHourlyWagebyRegion&#47;1_rss.png' style='border: none' /></a>
-              </noscript>
-              <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-              <script type="text/javascript" src="../static/js/vz.js"></script>
-              <object class='tableauViz' id='viz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/> 
-                <param name='embed_code_version' value='3'/>
-                <param name='site_root' value=''/>
-                <param name='name' value='Project3Rev2&#47;Top10MedianHourlyWagebyRegion'/>
-                <param name='tabs' value='yes'/>
-                <param name='toolbar' value='yes'/>
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project3Rev2&#47;Top10MedianHourlyWagebyRegion&#47;1.png'/>
-                <param name='animate_transition' value='yes'/>
-                <param name='display_static_image' value='yes'/>
-                <param name='display_spinner' value='yes'/>
-                <param name='display_overlay' value='yes'/>
-                <param name='display_count' value='yes'/>
-                <param name='filter' value='publish=yes'/>
-              </object>
-            </div> -->
-               
-          </div>
         </div>
       </div>
-        <br>
-         <!-- Section for Chart.js -->
-       <div class="row featurette" id='empbar'>
-           <div class="col-lg-12">
-             <!-- map explanation -->
-             <h2 class="featurette-heading"> Statewide Employment</h2>
-             <p class="lead" id="emp_chart">This figure represents the number of Texans employed in each sector for 2018.
-             </p>
-           </div>
-           <!-- CDN for Chart.js -->
-           <!-- <script scr= "https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> -->
-           <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
-           <!-- Chart.js -->
-           <canvas class="col-lg-12" id="mixedChart"></canvas>
-           <script type="text/javascript" src="../static/js/Chart.js"></script>
-         </div>
-     </div>
- 
- 
+  </div> 
      <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </body>
 <br>
 <br>
-<footer></footer>
-<br>
+<footer>.</footer>
 </html>

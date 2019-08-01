@@ -1,22 +1,4 @@
-Skip to content
- 
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@akt2 
-0
-0 1 akt2/texaswork
- Code  Issues 0  Pull requests 1  Projects 0  Wiki  Security  Insights  Settings
-texaswork/static/css/styles.css
-@akt2 akt2 updating tableau link
-23744a7 2 hours ago
-154 lines (143 sloc)  2.34 KB
-    
-/* IMAGE STYLES */
 .rounded-circle {
     border-radius: 50%!important;
     vertical-align: middle;
@@ -27,8 +9,6 @@ img {
     border-style: none;
     align-content: center;
 }
-
-/*  TEXT STYLES */
 .lead {
     font-size: 2.15rem;
     font-weight: 300;
@@ -36,20 +16,15 @@ img {
     padding-left: 40px;
     padding-right: 40px;
 }
-
-#emp_chart {
-  text-align: center;
-}
-#lab_map {
-  text-align: center;
-}
 body {
     margin: 0;
     font-family: "Times New Roman",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
     "Times New Roman","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    
+    background-image: image('../static/images/texascity1.jpg');
+    height: auto;
+    position: relative;
+    min-height: 100% !important;
 }
-
 
 .featurette-heading {
     font-weight: 300;
@@ -58,21 +33,9 @@ body {
     text-align: center;
 
 }
-
-#map,
-body,
-html {
-  height: 800px;
-}
-
-#map2,
-body,
-html {
-  height: 1000px;
-}
-footer,
-html {
-  padding: 10x;
+footer {
+  padding: 1%;
+  /* height: 1%; */
   margin: 10x;
   background: rgb(88, 172, 221);
 }
@@ -80,6 +43,7 @@ html {
 #tableaucontainer {
   align-content: center;
   width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -185,9 +149,20 @@ h2.featurette-heading {
 .sticky + .container {
     /* padding-top: 102px; */
   }
-  #theader-row {
-  padding: 10px 16px;
-  background: rgb(88, 172, 221);
-  color: #f1f1f1;
-  font-family: Times;
+#theader-row {
+padding: 10px 16px;
+background: rgb(88, 172, 221);
+color: #f1f1f1;
+font-family: Times;e
+  }
+#viz1564632529595 {
+  /* margin-bottom: 50%; */
+}
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  }
+.container {
+  height: 100%;
+  width: 100%;
 }

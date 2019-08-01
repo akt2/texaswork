@@ -37,18 +37,22 @@ def home():
 def tableau():
     return render_template('tableau.html')
 
+@app.route('/models')
+def models():
+    return render_template('models.html')
+
 @app.route('/data')
 def data():
-    return render_template('index2.html')
+    return render_template('data.html')
     # jsonify(df.to_json(orient='records'))
 
-@app.route('/csv')
-def upload_file():
-   return send_file('DataSet/bob.csv')
+# @app.route('/csv')
+# def upload_file():
+#    return send_file('DataSet/bob.csv')
 
-@app.route('/stat')
-def stat():
-    return render_template('stat.html')
+# @app.route('/stat')
+# def stat():
+#     return render_template('stat.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

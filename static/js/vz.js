@@ -44,3 +44,19 @@ window.onscroll = function() {myFunction()};
         header.classList.remove("sticky");
       }
     }
+
+    // tableau.html
+    var divElement = document.getElementById('viz1564624310615');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+    // models.html
+  var divElement = document.getElementById('viz1564690518427');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width='1016px';vizElement.style.height='991px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);        

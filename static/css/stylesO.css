@@ -1,0 +1,188 @@
+
+.rounded-circle {
+    border-radius: 50%!important;
+    vertical-align: middle;
+    align-content: center;
+    border-color: rgb(88, 172, 221);
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    align-content: center;
+}
+.lead {
+    font-size: 2.15rem;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    
+}
+body {
+    margin: 0;
+    font-family: "Times New Roman",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+    "Times New Roman","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    background-image: src='../static/images/texascity1.jpg';
+    height: auto;
+    position: relative;
+    min-height: 100% !important;
+    background: url('../images/texascity1 (4).jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* background-blend-mode: lighten; */
+    /* filter: brightness(50%); */
+}
+
+/* div#main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.hpm.io/wp-content/uploads/2016/01/11103753/6356za_6516_S.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-blend-mode: lighten;
+    filter: brightness(50%);
+} */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    text-align: center;
+
+}
+footer {
+  padding: 1%;
+  /* height: 1%; */
+  margin: 10x;
+  background: rgb(88, 172, 221);
+}
+
+#tableaucontainer {
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#viz {
+  align-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+}
+.tableauPlaceholder {
+  position: relative;
+  width: 100%;
+}
+#navy {
+  z-index: +1;
+  padding: 10px;
+  background: rgb(46, 47, 59);
+  color: #f7f2f2;
+  font-family: 'Times New Roman', Times, serif;
+}
+a.navbar-brand {
+padding: 10px 16px;
+/* background: rgb(149, 153, 152); */
+color: #f1f1f1;
+font-weight: bold;
+margin-left: 10%;
+align-content: center;
+font-size: 220%;
+}
+#navbarSupportedContent {
+  margin-left: 60%;
+  font-size: 180%;
+  color: white;
+  /* margin-right: 50px; */
+}
+.navbar-header {
+  align-content: right;
+}
+a.nav-link  {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+#circles.row {
+  margin-left: 5%;
+  margin-right: 5%;
+  align-content: center;
+}
+p.lead {
+  font-size: 200%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+img.rounded-circle {
+  /* align-content: center; */
+  margin: 10%;
+  margin-left: 18%;
+}
+p {
+  font-size: 150%;
+}
+a {
+  color: inherit;
+}
+.row {
+  align-content: center;
+}
+h2.featurette-heading {
+  font-size: 220%;
+  font-weight: bold;
+  margin: 2%;
+}
+
+#mixedChart {
+  align-content: center;
+  float: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 120%;
+}
+h1 {
+  color: rgb(4, 96, 150);
+  font-weight: bold;
+}
+h2 {
+  color: rgb(4, 96, 150);
+  font-weight: bold;
+}
+h2.featurette-heading {
+    color: rgb(4, 96, 150);
+  font-weight: bold;
+  font-family: Times;
+}
+.dataframe{
+  margin: auto;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+.sticky + .container {
+    /* padding-top: 102px; */
+  }
+#theader-row {
+padding: 10px 16px;
+background: rgb(88, 172, 221);
+color: #f1f1f1;
+font-family: Times;e
+  }
+#viz1564632529595 {
+  /* margin-bottom: 50%; */
+}
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  }
+.container {
+  height: 100%;
+  width: 100%;
+}
